@@ -6,7 +6,7 @@ All in one historical and regional data for every day in YYYY-MM-DD format. It c
 - *Development in regions*: quarantined people amount, deaths, cases by district (more detailed, since the Ministry of Health publishes only regions, but regional hygiene stations are sharing this data).
 
 ## Link to API
-API can be found [on Apify.com](https://api.apify.com/v2/key-value-stores/ad2dUV2Kkxba6XhO1/records/LATEST?disableRedirect=true) or copy this file:
+API can be found [on Apify.com](https://api.apify.com/v2/key-value-stores/ad2dUV2Kkxba6XhO1/records/LATEST?disableRedirect=true) or copy this url:
 
     https://api.apify.com/v2/key-value-stores/ad2dUV2Kkxba6XhO1/records/LATEST?disableRedirect=true
 
