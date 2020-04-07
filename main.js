@@ -664,6 +664,8 @@ class GlueTogether {
 
       if (this.apiHygieneDistricts[day]) {
         const regions = this.apiHygieneDistricts[day];
+        
+        console.log(this.apiHygieneDistricts);
 
         Object.keys(regions).forEach((region) => {
           const [districts] = regions[region];
