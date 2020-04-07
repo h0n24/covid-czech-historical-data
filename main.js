@@ -605,7 +605,6 @@ class GlueTogether {
         dailyData.r0 = this.R0(day);
       }
 
-      // final array -----------------------------------------------------------
       dailyArray[day] = dailyData;
     }
 
@@ -664,11 +663,10 @@ class GlueTogether {
 
       if (this.apiHygieneDistricts[day]) {
         const regions = this.apiHygieneDistricts[day];
-        
-        console.log(this.apiHygieneDistricts);
 
         Object.keys(regions).forEach((region) => {
-          const [districts] = regions[region];
+          const districts = regions[region];
+
           Object.keys(districts).forEach((district) => {
             const cases = districts[district];
 
