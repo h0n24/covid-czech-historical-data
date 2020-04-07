@@ -20,6 +20,8 @@ Per a day, shown as YYYY-MM-DD.
 API can be found [on Apify.com](https://api.apify.com/v2/key-value-stores/ad2dUV2Kkxba6XhO1/records/LATEST?disableRedirect=true) or copy this url:
 
     https://api.apify.com/v2/key-value-stores/ad2dUV2Kkxba6XhO1/records/LATEST?disableRedirect=true
+    
+Tip: You can [explore API on jsonformatter.org](https://jsonformatter.org/json-viewer/?url=https://api.apify.com/v2/key-value-stores/ad2dUV2Kkxba6XhO1/records/LATEST?disableRedirect=true)
 
 ## Data Sources
 - [MZČR](https://onemocneni-aktualne.mzcr.cz/covid-19), scrapped, not using their APIs
