@@ -2,8 +2,19 @@
 All in one historical and regional data for every day in YYYY-MM-DD format. It compiles together multiple other APIs.
 
 ## Summary
-- *Historical data*: number of cases, number of tests, number of deaths, hospitalization, quarantine, reproductive number.
-- *Development in regions*: quarantined people amount, deaths, cases by district (more detailed, since the Ministry of Health publishes only regions, but regional hygiene stations are sharing this data).
+### Historical data
+Per a day, shown as YYYY-MM-DD.
+- number of cases
+- number of tests
+- number of deaths
+- hospitalizations
+- quarantines
+- reproductive number
+
+### Development in regions
+- quarantines by region
+- deaths by region (age is shown as a category: 0-49, 50-59, 60+)
+- cases by district (more detailed, since the Ministry of Health publishes only regions, but regional hygiene stations are sharing this data)
 
 ## Link to API
 API can be found [on Apify.com](https://api.apify.com/v2/key-value-stores/ad2dUV2Kkxba6XhO1/records/LATEST?disableRedirect=true) or copy this url:
