@@ -174,13 +174,11 @@ class GetData {
     let final = [];
 
     for (let i = 0; i < data.length; i++) {
-      const person = data[i];
-      const date = this.readableDate(person[0]);
-      const prepareData = [person[1], person[2]];
-      // [prepareData] = person[1];
-      // [, prepareData] = person[2];
+      const day = data[i];
+      const date = this.readableDate(day[0]);
+      const prepareData = [day[1], day[2]];
 
-      final = hlp.pushToArrayByDate(final, date, prepareData);
+      final[date] = prepareData;
     }
 
     final = hlp.sortData(final);
@@ -498,10 +496,7 @@ class GlueTogether {
     let numberDeathsNow = 0;
 
     if (this.totalDied[day]) {
-      for (let index = 0; index < this.totalDied[day].length; index++) {
-        this.numberDeathsTotal += 1;
-        numberDeathsNow += 1;
-      }
+      [numberDeathsNow, this.numberDeathsTotal] = this.totalDied[day];
     }
 
     const prepareFormattedData = {};
@@ -637,28 +632,6 @@ class GlueTogether {
             regionalArray[region].quarantine[day] = regions[region];
           });
         }
-      }
-
-      if (this.totalDied[day]) {
-        const deaths = this.totalDied[day];
-
-        Object.keys(deaths).forEach((death) => {
-          const [age, region] = deaths[death];
-
-          if (regionalArray[region] === undefined) {
-            regionalArray[region] = {};
-          }
-
-          if (regionalArray[region].deaths === undefined) {
-            regionalArray[region].deaths = {};
-          }
-
-          if (regionalArray[region].deaths[day] === undefined) {
-            regionalArray[region].deaths[day] = [];
-          }
-
-          regionalArray[region].deaths[day].push(age);
-        });
       }
 
       if (this.apiHygieneDistricts[day]) {
